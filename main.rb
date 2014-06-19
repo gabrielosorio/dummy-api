@@ -41,7 +41,7 @@ module Dummy
         requires :picture_url, type: String, desc: 'Picture URL'
         requires :religion, type: String, desc: 'Religion'
       end
-      post :create_user do
+      post do
         {
           id: '9fad7bd9-e8d4-4f58-bb84-d7bc5ad03d5a',
           facebook_id: params[:facebook_id],
@@ -69,7 +69,7 @@ module Dummy
         requires :picture_url, type: String, desc: 'Picture URL'
         requires :religion, type: String, desc: 'Religion'
       end
-      put :update_user do
+      put do
         {
           id: '9fad7bd9-e8d4-4f58-bb84-d7bc5ad03d5a',
           facebook_id: params[:facebook_id],
